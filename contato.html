@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-contato.css">
+    <link rel="icon" href="imagens/icones/img-logo.png">
+    <title>Contato - Escola Maria Roxa</title>
+</head>
+
+<body>
+
+<header class="header">
+    <a href="index.html">
+        <img src="imagens/icones/img-logo.png" class="img-logo">
+    </a>
+
+    <nav>
+        <a href="sobre.html" class="nav-menu"> Sobre </a>
+        <a href="atividades.html" class="nav-menu"> Atividades </a>
+        <a href="equipe.html" class="nav-menu"> Equipe </a>
+        <a href="galeria.html" class="nav-menu"> Galeria </a>
+        <a href="contato.html" class="nav-menu"> Contato </a>
+    </nav>
+</header>
+
+<section class="contato">
+    <h2>Entre em Contato</h2>
+
+    <form action="salvar-mensagem.php" method="POST" class="form">
+        <label for="nome">Nome *</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem *</label>
+        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div class="endereco">
+        <h3>Endereço</h3>
+        <p>Rua Conde de Porto Alegre, 795</p>
+        <p>Bairro Centro</p>
+        <p>Santa Maria - RS</p>
+        <p>CEP: 97015-110</p>
+    </div>
+</section>
+
+</body>
+</html>
