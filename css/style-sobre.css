@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebebeb;
+}
+
+.header {
+    background-color: #411070;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-logo {
+    width: 150px;
+    padding-left: 30px;
+}
+
+.nav-menu {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #411070;
+    text-align: center;
+}
+
+h2 {
+    color: #411070;
+}
+
+h3 {
+    color: #5e3e9c;
+}
+
+p {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+ul {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.slider {
+    width: 980px;
+    height: 500px;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+/* Ocultar os inputs */
+.slider input {
+    display: none;
+}
+
+/* Container dos slides */
+.slides {
+    display: flex;
+    width: 100%; /* 4 slides */
+    height: 100%;
+    transition: transform 0.6s ease;
+    animation: autoplay 15s infinite;
+}
+
+
+/* Cada slide */
+.slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+/* Imagens */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Navegação (bolinhas) */
+.nav {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.nav label {
+    width: 12px;
+    height: 12px;
+    background: #cfcfcf;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#s1:checked ~ .nav label[for="s1"] { background: #52178a; }
+#s2:checked ~ .nav label[for="s2"] { background: #52178a; }
+#s3:checked ~ .nav label[for="s3"] { background: #52178a; }
+#s4:checked ~ .nav label[for="s4"] { background: #52178a; }
+
+/* Movimento dos slides */
+#s1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#s2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#s3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+#s4:checked ~ .slides {
+    transform: translateX(-300%);
+}

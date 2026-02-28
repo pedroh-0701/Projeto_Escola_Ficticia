@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebebeb;
+}
+
+.header {
+    background-color: #411070;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-logo {
+    width: 150px;
+    padding-left: 30px;
+}
+
+.nav-menu {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 30px;
+}
+
+.contato {
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f5f5f5;
+    border-radius: 12px;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#411070;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form input,
+.form textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.form button {
+    background: #411070;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #52178a;
+}
+
+.endereco {
+    margin-top: 30px;
+}
